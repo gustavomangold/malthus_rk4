@@ -3,7 +3,6 @@
 
 double func (double x) {      //função dV/dt, a taxa de crescimento do volume de celulas
 	double a0 = 0.0089;
-
 	return a0*x;
 
 }
@@ -18,20 +17,19 @@ double funcA (double t) {     //função solução
 
 int main () {
 
-double j1, j2, j3, j4, k1, k2, p1, q1, a1, a2, h, V00, Ve0, Ve, V2, V20, V40, t, tmax;
-double a = 0.0089; //taxa alpha de crescimento
-V00 = 904.8;       //volume inicial de celulas
-h=0.05;
-t=0;
-tmax = 300;
-Ve0=V00;	//variável do volume de células para euler
-V20 = V00;	//para rk2
-V40 = V00; 	//para rk4
-
+	double j1, j2, j3, j4, k1, k2, p1, q1, a1, a2, h, V00, Ve0, Ve, V2, V20, V40, t, tmax;
+	double a = 0.0089; //taxa alpha de crescimento
+	V00 = 904.8;       //volume inicial de celulas
+	h=0.05;
+	t=0;
+	tmax = 300;
+	Ve0=V00;	//variável do volume de células para euler
+	V20 = V00;	//para rk2
+	V40 = V00; 	//para rk4
+	
 
 do {
-
- while (t<=tmax) {	
+while (t<=tmax) {	
 	
 	//para imprimir resultado dos métodos, comentar os não desejados
 	
@@ -63,7 +61,6 @@ do {
         V40 = V40 + (j1/6+j2/3+j3/3+j4/6);
 
 	//printf("%lf %.25lf\n", t, V40); 
-	
 	t = t+h;
 
   }
