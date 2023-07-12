@@ -76,8 +76,5 @@ while (t<=tmax) {
 
 }  while (h<=1);
 
-
-
-
 return 0;
 }
