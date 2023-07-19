@@ -3,7 +3,7 @@ f(x) = 904.8*exp(0.0089*x)
 set terminal png size 800, 700
 set title "metodo de euler"
 set xlabel "tempo (dias)"
-set ylabel "volume de celulas (mm^3)"
+set ylabel "vol. de celulas (mm^3)"
 set output "euler"
 plot f(x) title "analitic0", "euler.txt" title "computado"
 
